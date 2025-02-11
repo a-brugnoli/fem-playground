@@ -10,8 +10,8 @@ def facet_internal_integral(integrand):
     return (integrand('+') + integrand('-')) * fdrk.dS + integrand * fdrk.ds
 
 
-nel_x, nel_y = 40, 40
-deg = 1
+nel_x, nel_y = 20, 20
+deg = 2
 domain = fdrk.UnitSquareMesh(nel_x, nel_y)
 normal = fdrk.FacetNormal(domain)
 
